@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "N8S+veopUevyt0LKLIBohr47FmOl77cI41BBeBPMFe4=",
+  "Source": "QiECommerceAPI",
+  "BasePath": "_content/QiECommerceAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\QiECommerceAPI.props" />
+</Project>
