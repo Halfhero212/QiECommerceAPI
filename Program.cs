@@ -27,11 +27,35 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
             ValidateAudience = true,
             ValidateLifetime = true,
             ValidateIssuerSigningKey = true,
-            ValidIssuer = jwtSettings["Issuer"],
-            ValidAudience = jwtSettings["Audience"],
-            IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(secretKey!))
+            ValidIssuer = "qi.com",
+            ValidAudience = "qi-users",
+            IssuerSigningKey = new SymmetricSecurityKey(
+                Encoding.UTF8.GetBytes("YourStrongSecretKey")
+            ),
+    RoleClaimType = "http://schemas.microsoft.com/ws/2008/06/identity/claims/role"
         };
+
+        // Add these events to see detailed info in your console
+        options.Events = new JwtBearerEvents
+        {
+            OnAuthenticationFailed = context =>
+            {
+                Console.WriteLine("JWT Authentication Failed: " + context.Exception.Message);
+                return Task.CompletedTask;
+            },
+ OnTokenValidated = context =>
+    {
+        // Show the raw token the server actually received
+        var token = context.SecurityToken as System.IdentityModel.Tokens.Jwt.JwtSecurityToken;
+        Console.WriteLine("Server sees token: " + (token?.RawData ?? "null"));
+
+        var claims = context.Principal?.Claims.Select(c => c.Type + "=" + c.Value) ?? new string[0];
+        Console.WriteLine("Claims: " + string.Join(", ", claims));
+        return Task.CompletedTask;
+    }
+};
     });
+
 
 // 3. Authorization policies
 builder.Services.AddAuthorization(options =>

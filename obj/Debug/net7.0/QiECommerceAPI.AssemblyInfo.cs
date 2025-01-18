@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("QiECommerceAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+eea8da58c6c05b15bffe63554ec699f87d2418c2")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c8a208a98ee86d026455591f5463246494dfbc93")]
 [assembly: System.Reflection.AssemblyProductAttribute("QiECommerceAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("QiECommerceAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
