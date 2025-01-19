@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("QiECommerceAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+dc985c702da48d9b1864ab1ac604c337fc5faa72")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+86d00cb84bc06da4976f58e87d81c1385ea8de19")]
 [assembly: System.Reflection.AssemblyProductAttribute("QiECommerceAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("QiECommerceAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
